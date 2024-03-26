@@ -1,0 +1,481 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-card {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+    height: 190px;
+}
+
+.product-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.product-card p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00a8cc;
+    margin-bottom: 10px;
+}
+
+.buy-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buy-btn:hover {
+    color:#ffaf97;
+}
+a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+}
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav li {
+    margin-bottom: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .product-card {
+        width: calc(100% - 20px); /* Menyesuaikan lebar kartu produk dengan margin */
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .navigation a {
+        margin-left: 10px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .product-card {
+        width: 100%; /* Ubah lebar kartu produk menjadi 100% untuk responsif */
+        max-width: 300px; /* Atur lebar maksimum kartu produk */
+        margin: 20px auto; /* Atur jarak margin atas dan bawah, dan otomatis tengah */
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .product-card img {
+        width: 100%;
+        border-radius: 5px;
+        height: auto; /* Ubah tinggi gambar menjadi otomatis sesuai proporsi */
+    }
+    
+    .product-card h3 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    
+    .product-card p {
+        margin-bottom: 10px;
+        color: #666;
+    }
+    
+    .price {
+        font-size: 20px;
+        font-weight: bold;
+        color: #00a8cc;
+        margin-bottom: 10px;
+    }
+    
+    .buy-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #ff5722;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .buy-btn:hover {
+        color: #ffaf97; /* Warna saat tombol hover */
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .product-card {
+        width: 300px;
+        margin: 20px;
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .product-card img {
+        width: 100%;
+        border-radius: 5px;
+        height: 190px;
+    }
+    
+    .product-card h3 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    
+    .product-card p {
+        margin-bottom: 10px;
+        color: #666;
+    }
+    
+    .price {
+        font-size: 20px;
+        font-weight: bold;
+        color: #00a8cc;
+        margin-bottom: 10px;
+    }
+    
+    .buy-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #ff5722;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Efek transisi saat hover */
+    }
+    
+    .buy-btn:hover {
+        background-color: #ffaf97; /* Warna latar belakang berubah saat hover */
+    }
+    
+}
+.container-m {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.company-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.company-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.company-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#ff5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.company-image {
+    flex: 1;
+
+}
+
+.company-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Tema Gelap */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-theme .header {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.dark-theme .navigation a {
+    color: #ffffff;
+}
+
+.dark-theme .container {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.dark-theme .product-card {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-theme .price {
+    color: #ff5722;
+}
+
+.dark-theme .buy-btn {
+    background-color: #ff5722;
+    color: #ffffff;
+}
+
+.dark-theme .footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+/* Tema Terang */
+body.light-theme {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.light-theme .header {
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+.light-theme .navigation a {
+    color: #333333;
+}
+
+.light-theme .container {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.light-theme .product-card {
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+.light-theme .price {
+    color: #00a8cc;
+}
+
+.light-theme .buy-btn {
+    background-color: #00a8cc;
+    color: #ffffff;
+}
+
+.light-theme .footer {
+    background-color: #333333;
+    color: #ffffff;
+}
+/* Hover dan Animasi */
+.buy-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Tambahkan efek transisi pada background, warna teks, dan transform */
+}
+
+.buy-btn:hover {
+    background-color: #ffaf97; /* Warna latar belakang berubah saat hover */
+    color: #fff; /* Warna teks tetap putih saat hover */
+    transform: scale(1.05); /* Efek scaling untuk animasi */
+}
+.btn:hover{
+    background-color: #ffaf97; /* Warna latar belakang berubah saat hover */
+    color: #fff; /* Warna teks tetap putih saat hover */
+    transform: scale(1.05); /* Efek scaling untuk animasi */ 
+}
+/* Animasi Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Mulai dengan opacity 0 */
+        transform: translateY(-20px); /* Mulai dengan translasi ke atas -20px */
+    }
+    to {
+        opacity: 1; /* Selesai dengan opacity 1 */
+        transform: translateY(0); /* Selesai dengan translasi ke atas 0 */
+    }
+}
+
+/* Terapkan animasi pada header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    animation: fadeIn 1s ease-in-out; /* Terapkan animasi fade in dengan durasi 1 detik */
+}
+
+/* Terapkan animasi pada navigasi */
+.navigation {
+    display: flex;
+    animation: fadeIn 1s ease-in-out; /* Terapkan animasi fade in dengan durasi 1 detik */
+}
+
+/* Terapkan animasi pada container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out; /* Terapkan animasi fade in dengan durasi 1 detik */
+}
+
+/* Terapkan animasi pada sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out; /* Terapkan animasi fade in dengan durasi 1 detik */
+}
+
+/* Terapkan animasi pada konten */
+.content {
+    flex: 1;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out; /* Terapkan animasi fade in dengan durasi 1 detik */
+}
